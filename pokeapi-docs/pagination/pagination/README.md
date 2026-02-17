@@ -7,7 +7,6 @@ This section explains how to:
 - Retrieve paginated results using `limit` and `offset`  
 - Navigate through multiple pages using the `next` and `previous` URLs  
 - Handle both Named and Unnamed resource lists  
-- Use curl, Python, and JavaScript examples to work with paginated responses  
 
 ---
 
