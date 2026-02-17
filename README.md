@@ -10,9 +10,8 @@ You are welcome to explore the projects, provide feedback, or connect.📚
 
 Each project is contained in its own folder with a README, example requests/responses, and optional OpenAPI specifications.  
 
-- **PokéAPI:** A growing set of guides for the PokéAPI, created as part of my *personal portfolio*. Current focus includes pagination, using `limit` and `offset` query parameters, and navigating `next` and `previous` pages. Future updates will expand to additional endpoints and practical usage examples. This project is independent and not affiliated with the official PokéAPI as of now.
-
-
+- **[PokéAPI](https://pokeapi.co/):** A growing set of guides for the PokéAPI, created as part of my *personal portfolio*. Current focus includes pagination, using `limit` and `offset` query parameters, and navigating `next` and `previous` pages. Future updates will expand to additional endpoints and practical usage examples. This project is independent and not affiliated with the official PokéAPI [GitHub repository](https://github.com/PokeAPI/pokeapi) as of now.
+- ** **
 
 
 ## Open Source Contributions
