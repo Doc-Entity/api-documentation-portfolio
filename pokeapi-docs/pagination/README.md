@@ -26,3 +26,17 @@ GET `https://pokeapi.co/api/v2/pokemon?limit=40&offset=0`
 **Note:** You can open this URL directly in a browser to inspect the raw JSON response.
 
 ---
+
+## Response Structure
+
+A paginated response returns the following fields:
+
+- `count`: Total number of resources available  
+- `next`: URL for the next page (or `null` if last page)  
+- `previous`: URL for the previous page (or `null` if first page)  
+- `results`: Array of resources returned for the current page 
+
+## Named vs. Unnamed Endpoints
+
+- **Named endpoints** (like Pokémon, abilities) return `NamedAPIResource` objects with `name` and `url`.  
+- **Unnamed endpoints** (like evolution-chain, machine) return `APIResource` objects with only a `url`.  
