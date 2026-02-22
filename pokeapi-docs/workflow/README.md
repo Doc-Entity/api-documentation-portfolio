@@ -1,4 +1,4 @@
-# Practical Workflow Usage
+# ⚙️ Practical Workflow Usage
 
  You can use the PokéAPI to retrieve and process resource collections when building applications that require sequential resource navigation or bulk data handling. 
 
