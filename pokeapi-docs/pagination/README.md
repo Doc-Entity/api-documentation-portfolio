@@ -3,6 +3,8 @@
 
 You can use pagination to retrieve large collections of resources from the PokéAPI in smaller, manageable pages.
 
+> **Note:** Pagination follows the standard resource navigation model using cursor-like traversal through result pages.
+
 This section explains how to:
 
 - Retrieve paginated results using `limit` and `offset`  
@@ -99,3 +101,12 @@ async function fetchAllPokemon() {
   return allResults;
 }
 ```
+---
+
+## Summary
+
+Pagination allows you to efficiently navigate large resource collections by retrieving data in smaller sequential responses.
+
+Use the `limit` and `offset` parameters to control page size and position.
+
+Follow the `next` field to move forward through pages, or the `previous` field to move backward, until no additional pages are available.
