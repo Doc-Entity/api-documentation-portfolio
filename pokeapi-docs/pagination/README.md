@@ -1,4 +1,3 @@
-
 # ⚡ PokéAPI Pagination
 
 You can use pagination to retrieve large collections of resources from the PokéAPI in smaller, manageable pages.
