@@ -10,6 +10,6 @@ Documentation is organized into topic-specific folders.
 
 - Pagination handling
 - Resource workflow usage
-- Moves endpoint documentation (coming up)
+- Moves endpoint documentation
 
 More topics may be added as the portfolio grows.
