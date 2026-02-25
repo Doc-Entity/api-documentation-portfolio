@@ -77,3 +77,53 @@ Within evolution_details, commonly used fields include:
 Typically, you extract only the evolution details relevant to your application rather than processing the entire nested structure.
 
 ---
+
+## Integration Workflow
+
+A typical integration pattern includes:
+
+1. Request Pokémon species data.
+2. Retrieve the evolution_chain URL.
+3. Request the evolution chain resource.
+4. Follow the nested chain structure.
+5. Map species and evolution conditions to your application model.
+
+This allows evolution trees to be rendered visually, analyzed, or integrated into gameplay systems.
+
+### Example (JavaScript)
+
+The following example demonstrates how to retrieve an evolution chain using a species name.
+
+```javascript
+async function fetchEvolutionChain(speciesName) {
+  // Step 1: Fetch species data
+  const speciesResponse = await fetch(
+    `https://pokeapi.co/api/v2/pokemon-species/${speciesName}`
+  );
+
+  if (!speciesResponse.ok) {
+    throw new Error("Failed to retrieve species data");
+  }
+
+  const speciesData = await speciesResponse.json();
+
+  // Step 2: Fetch evolution chain
+  const chainResponse = await fetch(speciesData.evolution_chain.url);
+
+  if (!chainResponse.ok) {
+    throw new Error("Failed to retrieve evolution chain");
+  }
+
+  return await chainResponse.json();
+}
+```
+
+---
+
+## Summary
+
+The Evolution Chain endpoint provides structured, nested data describing Pokémon evolution paths.
+
+Retrieve the evolution chain URL from a species resource, request the chain endpoint, and traverse the nested chain structure to extract species and evolution conditions.
+
+Use this data to model progression trees, display branching evolutions, or implement evolution-based logic in your application.
