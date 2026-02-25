@@ -36,3 +36,44 @@ You then request:
 GET `https://pokeapi.co/api/v2/evolution-chain/{id}/`
 
 ---
+
+## Response Structure
+
+The Evolution Chain endpoint returns a nested object representing the full evolution tree.
+
+The main structure includes:
+
+- `id`: Evolution chain identifier
+- `chain`: Root of the evolution tree
+
+The `chain` object contains
+- `species`: Current Pokémon species
+- `evolves_to`: Array of next-stage evolutions
+- `evolution_details`: Conditions required for evolution
+
+### Nested Chain Model
+
+The structure is nested. Each entry inside `evolves_to` may contain another chain object with the same structure:
+
+```text
+species
+└── evolves_to[]
+    └── species
+        └── evolves_to[]        
+```
+
+> **Note:** Evolution chains may branch. A single species can evolve into multiple different species depending on conditions.
+
+## Common Evolution Fields
+
+Within evolution_details, commonly used fields include:
+
+- `min_level`: Minimum level required
+- `item`: Required evolution item
+- `trigger`: Evolution trigger (level-up, trade, use-item, etc.)
+- `min_happiness`: Required friendship level
+- `time_of_day`: Day or night evolution condition
+
+Typically, you extract only the evolution details relevant to your application rather than processing the entire nested structure.
+
+---
