@@ -12,5 +12,7 @@ Documentation is organized into topic-specific folders.
 - Resource workflow usage
 - Moves endpoint documentation
 - Evolution chain endpoint documentation
+- Abilities endpoint documentation
+- Species endpoint documentation
 
 More topics may be added as the portfolio grows.
