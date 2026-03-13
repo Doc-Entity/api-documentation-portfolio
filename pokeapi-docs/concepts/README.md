@@ -10,3 +10,5 @@ Available concept guides include:
 
 - Handling Nested Responses
 - (coming soon)
+<!-- - Handling Resource References
+- Handling Optional Fields -->
