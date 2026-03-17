@@ -9,6 +9,6 @@ These guides help you understand how to read responses, follow relationships bet
 Available concept guides include:
 
 - Handling Nested Responses
+- Handling Optional Fields
 - (coming soon)
-<!-- - Handling Resource References
-- Handling Optional Fields -->
+<!-- - Handling Resource References -->
